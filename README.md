@@ -1,7 +1,9 @@
 # TELESTO-weather-allsky
+Repository for the code used to run the DIY weather station and All-Sky camera build for the Sauverny Observatory in the scope of a semester project.
 
+![AllSky image](AllSky.jpg)
 
-## This is the Github repository for the code of the semester project at Sauverny's Observatory.
+## Code Structure
 
 The code for this project can be divided into 3 main parts, you will find it in the 3 main directories:
 
@@ -10,10 +12,11 @@ The code for this project can be divided into 3 main parts, you will find it in 
 * /var/www/**html**: This directory contains all the code necessary to run the lighttpd server.
 
 
-## The code and build of this project was mainly inspired by:
+## Inspiration and Sources:
+
+There are already several well written blogs and posts about the creation of all sky camera and weather stations. I highly recommend having a look at the two following:
 
 * The excellent project of Thomas Jacquin which can be consulted on https://github.com/thomasjacquin/allsky
-
 * The Raspberry Pi Fundation weather station project which is available at : https://projects.raspberrypi.org/en/projects/build-your-own-weather-station
 
-
+Furthermore, Thomas Jacquin wrote an excellent software to run the ASI All-Sky camera and host the control and results on a small webpage. My project was heavily inspired from his work and several minor modification/improvements were add to his code (for example display the current weather on the webserver as the All-Sky images).
