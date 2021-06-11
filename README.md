@@ -1,8 +1,6 @@
 # TELESTO-weather-allsky
 Repository for the code used to run the DIY weather station and All-Sky camera build for the Sauverny Observatory in the scope of a semester project.
 
-![AllSky image](AllSky.jpg)
-
 ## Code Structure
 
 The code for this project can be divided into 3 main parts, you will find it in the 3 main directories:
@@ -11,6 +9,8 @@ The code for this project can be divided into 3 main parts, you will find it in 
 * /home/pi/**allsky**: This directory contains all the code necessary to run the All-Sky camera.
 * /var/www/**html**: This directory contains all the code necessary to run the lighttpd server.
 
+## The ZWO Camera ASI 178 MM Mono with its 170° wide angle lens
+![AllSky image](AllSky.jpg)
 
 ## Inspiration and Sources:
 
