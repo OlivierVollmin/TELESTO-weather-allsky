@@ -1,0 +1,286 @@
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+True
+True
+True
+True
+True
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+True
+False
+True
+True
+True
+True
+True
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+[Errno 121] Remote I/O error
+Traceback (most recent call last):
+  File "/home/pi/weather/Measure.py", line 156, in ReadBME280
+    bme280_data = bme280.sample(bus, address)
+  File "/usr/local/lib/python3.7/dist-packages/bme280/__init__.py", line 212, in sample
+    bus.write_byte_data(address, 0xF2, h_oversampling)  # ctrl_hum
+  File "/usr/local/lib/python3.7/dist-packages/smbus2/smbus2.py", line 455, in write_byte_data
+    ioctl(self.fd, I2C_SMBUS, msg)
+OSError: [Errno 121] Remote I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/weather/Measure.py", line 265, in <module>
+    ReadBME280()
+  File "/home/pi/weather/Measure.py", line 161, in ReadBME280
+    bme280_data = bme280.sample(bus, address)
+  File "/usr/local/lib/python3.7/dist-packages/bme280/__init__.py", line 212, in sample
+    bus.write_byte_data(address, 0xF2, h_oversampling)  # ctrl_hum
+  File "/usr/local/lib/python3.7/dist-packages/smbus2/smbus2.py", line 455, in write_byte_data
+    ioctl(self.fd, I2C_SMBUS, msg)
+OSError: [Errno 121] Remote I/O error
+Traceback (most recent call last):
+  File "/home/pi/weather/Measure.py", line 64, in <module>
+    bme280.load_calibration_params(bus, address)
+  File "/usr/local/lib/python3.7/dist-packages/bme280/__init__.py", line 153, in load_calibration_params
+    compensation_params.dig_T1 = read.unsigned_short(0x88)
+  File "/usr/local/lib/python3.7/dist-packages/bme280/reader.py", line 40, in unsigned_short
+    return self._bus.read_word_data(self._address, register) & 0xffff
+  File "/usr/local/lib/python3.7/dist-packages/smbus2/smbus2.py", line 474, in read_word_data
+    ioctl(self.fd, I2C_SMBUS, msg)
+OSError: [Errno 121] Remote I/O error
+Traceback (most recent call last):
+  File "/home/pi/weather/Measure.py", line 64, in <module>
+    bme280.load_calibration_params(bus, address)
+  File "/usr/local/lib/python3.7/dist-packages/bme280/__init__.py", line 153, in load_calibration_params
+    compensation_params.dig_T1 = read.unsigned_short(0x88)
+  File "/usr/local/lib/python3.7/dist-packages/bme280/reader.py", line 40, in unsigned_short
+    return self._bus.read_word_data(self._address, register) & 0xffff
+  File "/usr/local/lib/python3.7/dist-packages/smbus2/smbus2.py", line 474, in read_word_data
+    ioctl(self.fd, I2C_SMBUS, msg)
+OSError: [Errno 121] Remote I/O error
+Traceback (most recent call last):
+  File "/home/pi/weather/Measure.py", line 64, in <module>
+    bme280.load_calibration_params(bus, address)
+  File "/usr/local/lib/python3.7/dist-packages/bme280/__init__.py", line 153, in load_calibration_params
+    compensation_params.dig_T1 = read.unsigned_short(0x88)
+  File "/usr/local/lib/python3.7/dist-packages/bme280/reader.py", line 40, in unsigned_short
+    return self._bus.read_word_data(self._address, register) & 0xffff
+  File "/usr/local/lib/python3.7/dist-packages/smbus2/smbus2.py", line 474, in read_word_data
+    ioctl(self.fd, I2C_SMBUS, msg)
+OSError: [Errno 121] Remote I/O error

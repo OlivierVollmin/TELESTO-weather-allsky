@@ -1,0 +1,5 @@
+Error mariaDB: 2003: Can't connect to MySQL server on '127.0.0.1:3306' (111 Connection refused)
+Traceback (most recent call last):
+  File "/home/pi/weather/CPU_temp.py", line 39, in <module>
+    mariadb_connection.close()
+NameError: name 'mariadb_connection' is not defined

@@ -1,0 +1,75 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/mysql/connector/network.py", line 509, in open_connection
+    self.sock.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 32, in <module>
+    user='pi', password='TELESTO', database='weatherDB')
+  File "/usr/local/lib/python3.7/dist-packages/mysql/connector/__init__.py", line 179, in connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/mysql/connector/connection.py", line 95, in __init__
+    self.connect(**kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/mysql/connector/abstracts.py", line 716, in connect
+    self._open_connection()
+  File "/usr/local/lib/python3.7/dist-packages/mysql/connector/connection.py", line 206, in _open_connection
+    self._socket.open_connection()
+  File "/usr/local/lib/python3.7/dist-packages/mysql/connector/network.py", line 512, in open_connection
+    errno=2003, values=(self.get_address(), _strioerror(err)))
+mysql.connector.errors.InterfaceError: 2003: Can't connect to MySQL server on '127.0.0.1:3306' (111 Connection refused)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 41, in <module>
+    except mysql.connector.Error as e:
+NameError: name 'mysql' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 46, in <module>
+    if mariadb_connection.is_connected():
+NameError: name 'mariadb_connection' is not defined
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 78, in <module>
+    ax1.set_ylim(min(min(temperature), min(T_dp)) - 5, max(temperature) + 5)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 78, in <module>
+    ax1.set_ylim(min(min(temperature), min(T_dp)) - 5, max(temperature) + 5)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 78, in <module>
+    ax1.set_ylim(min(min(temperature), min(T_dp)) - 5, max(temperature) + 5)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 78, in <module>
+    ax1.set_ylim(min(min(temperature), min(T_dp)) - 5, max(temperature) + 5)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 78, in <module>
+    ax1.set_ylim(min(min(temperature), min(T_dp)) - 5, max(temperature) + 5)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 78, in <module>
+    ax1.set_ylim(min(min(temperature), min(T_dp)) - 5, max(temperature) + 5)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 78, in <module>
+    ax1.set_ylim(min(min(temperature), min(T_dp)) - 5, max(temperature) + 5)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 78, in <module>
+    ax1.set_ylim(min(min(temperature), min(T_dp)) - 5, max(temperature) + 5)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 78, in <module>
+    ax1.set_ylim(min(min(temperature), min(T_dp)) - 5, max(temperature) + 5)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/pi/weather/plot.py", line 78, in <module>
+    ax1.set_ylim(min(min(temperature), min(T_dp)) - 5, max(temperature) + 5)
+ValueError: min() arg is an empty sequence

@@ -1,0 +1,79 @@
+#!/bin/bash
+
+# Choose between ZWO or RPiHQ or auto (prefers ZWO if present)
+CAMERA="auto"
+
+# Set to true to upload current image to your website
+UPLOAD_IMG=false
+
+# Set to true to upload timelapse video to your website at the end of each night
+UPLOAD_VIDEO=false
+
+# Set to true to send data to your server at the end of each night
+POST_END_OF_NIGHT_DATA=false
+
+# Set to true to generate a timelapse at the end of the night
+TIMELAPSE=true
+
+# Set the width and height parameter for timelapse generation (sizes must be divisible by 2)
+TIMELAPSEWIDTH=0
+TIMELAPSEHEIGHT=0
+
+# Timelapse frame rate (number of frames per second)
+FPS=25
+
+# Set to true to generate a keogram at the end of the night (image summary of the night)
+KEOGRAM=true
+
+# Set to true to upload the keogram after it has been generated
+UPLOAD_KEOGRAM=false
+
+# Set to true to generate a startrails image of the night. Will skip brighter images to avoid over-exposure
+STARTRAILS=true
+
+# Images with a brightness higher than the threshold will be skipped for startrails image generation
+BRIGHTNESS_THRESHOLD=0.1
+
+# Set to true to upload the startrails after it has been generated
+UPLOAD_STARTRAILS=false
+
+# Set to true to enable automatic deletion of archived data (images + videos)
+AUTO_DELETE=true
+
+# Set this value to the number of archived nights you want to keep. Needs AUTO_DELETE=true to work
+NIGHTS_TO_KEEP=14
+
+# Set to true if you want to enable dark frame subtraction on your night time images
+DARK_FRAME_SUBTRACTION=false
+
+# Set to 0 to disable Daytime Capture
+DAYTIME="1"
+
+# Set 24Hr capture to true to save both night and day images to disk. By default, only night images are saved.
+CAPTURE_24HR=false
+
+# Resize images before cropping and saving. Adjust width and height according to your own sensor ratio
+IMG_RESIZE=false
+IMG_HEIGHT=1520
+IMG_WIDTH=2028
+
+# Crop the captured image, used to improve the images when using a fisheye lens
+CROP_IMAGE=false
+CROP_WIDTH=640
+CROP_HEIGHT=480
+CROP_OFFSET_X=0
+CROP_OFFSET_Y=0
+
+# Auto stretch images saved at night
+AUTO_STRETCH=false
+AUTO_STRETCH_AMOUNT=10
+AUTO_STRETCH_MID_POINT=10%
+
+# Path to the camera settings (exposure, gain, delay, overlay, etc)
+CAMERA_SETTINGS_DIR="$ALLSKY_HOME"
+
+if [[ $CAMERA -eq "auto" ]]; then
+  # restore currently saved autodiscovered camera mode if any
+  source "$ALLSKY_HOME/autocam.sh"
+fi
+CAMERA_SETTINGS="$CAMERA_SETTINGS_DIR/settings_$CAMERA.json"
