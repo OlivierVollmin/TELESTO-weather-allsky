@@ -1,3 +1,5 @@
+# ORIGINAL ALLSKY README.md from https://github.com/thomasjacquin/allsky-portal
+
 ![](http://www.thomasjacquin.com/allsky-portal/images/liveview.jpg)
 # `$ allsky-portal` ![Release 0.6](https://img.shields.io/badge/Release-0.6-green.svg)
 A simple, responsive web interface to control an allsky camera built with a Raspberry Pi and ZWO astronomy camera.
