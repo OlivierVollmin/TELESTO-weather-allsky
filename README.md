@@ -3,11 +3,14 @@ Repository for the code used to run the DIY weather station and All-Sky camera b
 
 ## Code Structure
 
-The code for this project can be divided into 3 main parts, you will find it in the 3 main directories:
+The code for this project can be divided into 3 main parts, each part is located in a specific directory on the Raspberry Pi 4:
 
 * /home/pi/**weather**: This directory contains all the code necessary to run the weather station, generate plots and save the data.
 * /home/pi/**allsky**: This directory contains all the code necessary to run the All-Sky camera.
 * /var/www/**html**: This directory contains all the code necessary to run the lighttpd server.
+
+## The setup of the weather station and All-Sky camera is the following :
+![Setup image](setup.JPG)
 
 ## The ZWO Camera ASI 178 MM Mono with its 170° wide angle lens
 ![AllSky image](AllSky.jpg)
