@@ -1,8 +1,8 @@
 # TELESTO-weather-allsky
 Repository for the code used to run the DIY weather station and All-Sky camera build for the Sauverny Observatory in the scope of a semester project.
+![Assembly](Assembly.jpg)
 
 ## Code Structure
-
 The code for this project can be divided into 3 main parts, each part is located in a specific directory on the Raspberry Pi 4:
 
 * /home/pi/**weather**: This directory contains all the code necessary to run the weather station, generate plots and save the data.
@@ -12,8 +12,16 @@ The code for this project can be divided into 3 main parts, each part is located
 ## The setup of the weather station and All-Sky camera is the following :
 ![Setup image](setup.JPG)
 
-## The ZWO Camera ASI 178 MM Mono with its 170° wide angle lens
-![AllSky image](AllSky.jpg)
+## The camera and Raspberry Pi 4B case :
+In this improved version, the Raspberry Pi and the All-Sky camera are now inside an electrical cabinet. The cabinet has more space and allows for active thermal regualtation. In my case, the cabinet has a NO NC thermostat used to toggle a heater and a fan. The wiring is the following :
+
+![Power_Wiring](Power_Wiring.JPG)
+
+## The ZWO Camera ASI 178 MM Mono with its 170° wide angle lens and nearby anti-fog heater:
+![Dome_avec_radiateur](Dome_avec_radiateur.jpg)
+
+## The inside of the electrical cabinet:
+![Armoire_dedans2](Armoire_dedans2.jpg)
 
 ## Inspiration and Sources:
 
